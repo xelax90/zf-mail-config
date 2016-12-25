@@ -1,0 +1,29 @@
+{
+    "name": "xelax90/zf-mail-config",
+    "description": "Simple module providing transport configuration in config files",
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "Aleksandr",
+            "email": "schurix@gmx.de"
+        }
+    ],
+	"extra" : {
+		"zf" : {
+			"module" : "XelaxMailConfig"
+		}
+	},
+    "autoload": {
+        "psr-4": {
+            "XelaxMailConfig\\": "src/"
+        }
+    },
+    "require": {
+		"zendframework/zend-mail" : "^2.7",
+		"zendframework/zend-servicemanager" : "^3.0"
+	},
+	"require-dev" : {
+	},
+	"suggest" : {
+	}
+}
