@@ -1,6 +1,8 @@
 <?php
 namespace XelaxMailConfig;
 use Zend\Mail\Transport\TransportInterface;
+use Zend\ModuleManager\Feature\ConfigProviderInterface;
+use Zend\ModuleManager\Feature\ServiceProviderInterface;
 
 class Module implements ConfigProviderInterface, ServiceProviderInterface
 {
@@ -13,10 +15,7 @@ class Module implements ConfigProviderInterface, ServiceProviderInterface
 	public function getServiceConfig() {
 		return [
 			'factories' => [
-				TransportInterface::class => Listener\Factory\NotificationListenerFactory::class,
-				Notification\NotificationPluginManager::class => Notification\Factory\NotificationPluginManagerFactory::class,
-				Notification\Handler\HandlerPluginManager::class => Notification\Handler\Factory\HandlerPluginManagerFactory::class,
-				Options\NotificationOptions::class => Options\Factory\NotificationOptionsFactory::class
+				TransportInterface::class => Factory\TransportFactory::class,
 			],
 			'delegators' => [
 			],
