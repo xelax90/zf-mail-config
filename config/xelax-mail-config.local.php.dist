@@ -3,9 +3,11 @@ namespace XelaxMailConfig;
 
 return [
 	Module::CONFIG_KEY => [
-		'connection_config' => [
-			'username' => '',
-			'password' => '',
+		'options' => [
+			'connection_config' => [
+				'username' => '',
+				'password' => '',
+			],
 		]
 	],
 ];
