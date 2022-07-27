@@ -1,8 +1,8 @@
 <?php
 namespace XelaxMailConfig;
-use Zend\Mail\Transport\TransportInterface;
-use Zend\ModuleManager\Feature\ConfigProviderInterface;
-use Zend\ModuleManager\Feature\ServiceProviderInterface;
+use Laminas\Mail\Transport\TransportInterface;
+use Laminas\ModuleManager\Feature\ConfigProviderInterface;
+use Laminas\ModuleManager\Feature\ServiceProviderInterface;
 
 class Module implements ConfigProviderInterface, ServiceProviderInterface
 {
