@@ -1,7 +1,7 @@
 {
     "name": "xelax90/zf-mail-config",
     "description": "Simple module providing transport configuration in config files",
-    "license": "GPLv2",
+    "license": "MIT",
     "authors": [
         {
             "name": "Aleksandr",
