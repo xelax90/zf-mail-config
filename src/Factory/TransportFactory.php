@@ -1,8 +1,8 @@
 <?php
 namespace XelaxMailConfig\Factory;
 
-use Zend\ServiceManager\Factory\FactoryInterface;
-use Zend\Mail\Transport\Factory;
+use Laminas\ServiceManager\Factory\FactoryInterface;
+use Laminas\Mail\Transport\Factory;
 use XelaxMailConfig\Module;
 use Interop\Container\ContainerInterface;
 
